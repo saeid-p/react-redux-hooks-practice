@@ -13,10 +13,7 @@ export default () => {
     const model = useSelector(state => state.user);
 
     const [user, setUser] = useState(model.item);
-    const usernameInput = React.createRef();
-    console.log("###### id", id);
-    console.log("model", model);
-    console.log("user", user)
+    const usernameInput = React.createRef();    
 
     useEffect(() => {
         if (model.state === "loaded") {
